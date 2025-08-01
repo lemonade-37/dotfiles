@@ -5,7 +5,7 @@
 call plug#begin('~/.vim/plugged')
 
 	" ヘルプを日本語化する
-	Plug 'vim-jp/vimdoc-j'
+	Plug 'vim-jp/vimdoc-ja'
 	Plug 'Shougo/vimproc'
 	:Plug 'vim-ruby/vim-ruby'
 	Plug 'tpope/vim-rails'
