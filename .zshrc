@@ -15,8 +15,12 @@ export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 # Oh My Posh
 eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
 
-# Git
+# Git alias
 alias g=git
+
+# Enable zsh completion for Git
+autoload -Uz compinit
+compinit
 
 # Go
 export GOPATH=$HOME
