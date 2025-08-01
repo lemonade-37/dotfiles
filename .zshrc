@@ -11,3 +11,6 @@ eval "$(nodenv init -)"
 
 # PostgreSQL
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+# Oh My Posh
+eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp.json)"
