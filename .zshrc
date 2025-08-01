@@ -17,3 +17,7 @@ eval "$(oh-my-posh init zsh --config $(brew --prefix oh-my-posh)/themes/pure.omp
 
 # Git
 alias g=git
+
+# Go
+export GOPATH=$HOME
+export PATH=$PATH:$GOPATH/bin
