@@ -28,6 +28,9 @@ call plug#begin('~/.vim/plugged')
 	Plug 'dracula/vim', { 'as': 'dracula' }
 	Plug 'mattn/emmet-vim'
 	Plug 'othree/html5.vim'
+	Plug 'sainnhe/everforest'
+	" ファイルをtree表示してくれる
+ 	Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -63,7 +66,7 @@ set laststatus=2
 filetype plugin indent on
 
 " カラースキーマ設定
-colorscheme 
+colorscheme everforest
 
 "テキストの折り返し
 set wrap
@@ -76,3 +79,6 @@ noremap <CR> o<esc>
 
 "jjでEscキーと同じ効果
 "inoremap <silent> jj <ESC>
+
+" NERDTreeのエイリアス設定
+nnoremap <C-b> :NERDTreeToggle<CR>
